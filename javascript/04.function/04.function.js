@@ -53,16 +53,36 @@ pow(1, 100) = 1 * 1 * ...* 1 = 1
 주의사항: n은 1 이상의 자연수이어야 합니다. 이외의 경우엔 자연수를 입력하라는 얼럿 창을 띄워주어야 합니다.
 */
 
+// 거듭제곱 연산자 사용
 function pow(x, n) {
   x **= n;
 
-  // throw new Error을 쓸 수는 없을까?
-  (n >= 1) || alert(`${n}은 양의 정수이어야 합니다.`);
+  if (n < 1) throw new Error(`${n}은 양의 정수이어야 합니다.`);
 
   return x;
 }
 
-let x = prompt("x?", "");
-let n = prompt("n?", "");
+// let x = prompt("x?", "");
+// let n = prompt("n?", "");
 
-console.log(`pos(${x}, ${n}) = ${pow(x, n)}`);
+// console.log(`pos(${x}, ${n}) = ${pow(x, n)}`);
+
+
+// 거듭제곱 연산자 미사용
+function pow(x, n) {
+  if (n < 1) throw new Error(`${n}은 양의 정수이어야 합니다.`);
+
+  let result = x;
+  let i = 1;
+
+  while (i < n) {
+    result *= x;
+    i++;
+  }
+  return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+console.log(pow(x, n));
