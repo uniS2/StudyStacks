@@ -1,5 +1,5 @@
-# 반복문
-- while, do, do..while 문 작성 연습을 위한 폴더입니다.
+# loop
+- while, do, do..while 반복문 작성 연습을 위한 폴더입니다.
 ---
 
 ## 목차
