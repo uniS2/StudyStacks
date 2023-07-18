@@ -6,7 +6,7 @@
 |Day3||
 |Day4||
 |Day5|☑️|[loop](/javascript/loop/) / [for..in and for..of](/javascript/basic/for-in-of.md) / [function](/javascript/function/)|
-|Day6||[shorthand-property](/javascript/06.shorthand%20property.js)|
+|Day6||[shorthand-property](/javascript/basic/shorthand%20property.js)|
 |Day7||[method and this](/javascript/object/method-this.md) / [prototype]()|
 |Day8||
 |Day9||
