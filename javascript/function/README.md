@@ -10,10 +10,10 @@
   - [콜백 함수](#콜백-함수)  
   - [화살표 함수](#화살표-함수)
 - 예제
-  - javascript-info [바로가기](/javascript/04.function/04.function.js)
-  - n단 출력하기 [바로가기](/javascript/04.function/multiplication.js)  
-    참고: 구구단 예제 변형 [바로가기](/javascript/04.loop-condition/multiplation.js)
-  - 나이별 주류 허용 문제 [바로가기](/javascript/04.function/drinking.js)
+  - javascript-info [바로가기](/javascript/function/function.js)
+  - n단 출력하기 [바로가기](/javascript/function/multiplication.js)  
+    참고: 구구단 예제 변형 [바로가기](/javascript/loop/multiplation.js)
+  - 나이별 주류 허용 문제 [바로가기](/javascript/function/drinking.js)
 
 ---
 

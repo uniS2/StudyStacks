@@ -7,7 +7,7 @@
 - [ESLint](#eslint)
 - [Prettier](#prettier)
 - [live-server](#live-server)
-- [npm,npx 와 npm -g](/javascript/00.npm-npx.md)
+- [npm,npx 와 npm -g](/javascript/basic/npm-npx.md)
 
 ---
 

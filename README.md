@@ -11,4 +11,4 @@ Commits what @uniS2 studied today.
 
 # 목차
 
-- [Javascript](/javascript/)
+- [Javascript](/javascript)

@@ -7,8 +7,8 @@
 - [문법](#문법)
 - 예제
   - [소수 구하기](#소수-구하기)
-  - 구구단 출력하기 [바로가기](/javascript/04.loop-condition/multiplation.js)
-    주어진 예제 함수로 생성하기 [바로가기](/javascript/04.function/multiplication.js)
+  - 구구단 출력하기 [바로가기](/javascript/loop/multiplation.js)
+    주어진 예제 함수로 생성하기 [바로가기](/javascript/function/multiplication.js)
 
 ---
 
@@ -38,7 +38,7 @@ do {
 
 ## 예제
 ### 소수 구하기
-[바로가기](/javascript/04.loop/primeNumber.js)
+[바로가기](/javascript/loop/primeNumber.js)
 ```javascript
 nextPrime:
 for(;i <= number; i++){
