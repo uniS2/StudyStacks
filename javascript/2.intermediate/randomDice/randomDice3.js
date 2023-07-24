@@ -29,7 +29,7 @@ function createItem(value) { // template 생성함수
 
 // 2-5. 실행
 function renderRecordItem(){
-  const diceValue = attr("#cube", "data-dice"); // 2-3. 1) 주사위 속성값 가져오기
+  const diceValue = +attr('#cube', 'data-dice'); // 2-3. 1) 주사위 속성값 가져오기
 
   insertLast(tbody, createItem(diceValue)); // 값 넣어주기
 

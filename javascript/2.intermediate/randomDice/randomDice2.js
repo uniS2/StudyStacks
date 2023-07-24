@@ -36,7 +36,7 @@ function renderRecordItem(){
     // 2-3. 주사위 값 => 큐브의 'data-dice' 속성값을 가져와서 사용하겠다.
   /* cube 요소(주사위)의 dice 속성을 변경하여 주사위의 숫자를 설정합니다.
   setAttr : node.dataset[prop] => data-dice */
-  const diceValue = attr("#cube", "data-dice"); // 2-3. 1) 주사위 속성값 가져오기
+  const diceValue = +attr('#cube', 'data-dice'); // 2-3. 1) 주사위 속성값 가져오기
 
   insertLast(tbody, createItem(diceValue)); // 값 넣어주기
 
