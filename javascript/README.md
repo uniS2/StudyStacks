@@ -15,3 +15,6 @@
 |Day12||[delegation: handleSlider](/javascript/1.basic/delegation.js)|
 |Day13||[delegation: handleSlider](/javascript/delegation/handleSlider.js)|
 |Day14||[memoization](/javascript/2.intermediate/memorization.md) / [randomDice 실습](/javascript/2.intermediate/randomDice)|
+|Day15||[CORS](/javascript/2.intermediate/CORS.md)|
+|Day16|||
+|Day17|||
