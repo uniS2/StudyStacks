@@ -9,3 +9,6 @@
 | Day5 |      |   |
 | Day6 |      |   |
 | Day7 |      |   |
+| Day8 |      |   |
+| Day9 |      |   |
+| Day10 |      | [env](/React/1.preview/10.env.md) |
