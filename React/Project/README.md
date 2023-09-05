@@ -17,5 +17,8 @@
 ### [포맷터](/React/Project/01.formatter/)
 
 ### [협업]
+- Notion, GitHub - wiki 활용하기
 
-- Notion, GitHub 등
+## 컨벤션 및 컴포넌트 폴더 구성
+- [Convention](/React/Project/02.Convention.md)
+- [Folder](/React/Project/02.Folder.md)
