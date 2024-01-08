@@ -28,7 +28,7 @@
     async function refreshHistory() {
       let { data: record, error } = await client.from("page").select("*");
 
-      if (error || titleError) throw error;
+      if (error) throw error;
 
       // HTML 요소 추가
       let tag = "";
@@ -44,9 +44,10 @@
     async function readPageTitleDate() {
       let { data: titleData, error: titleError } = await client.from("page").select("id, title");
 
-      if (titleData.length) console.log(titleData);
-      if (titleError) throw error;
+      console.log(titleData);
     }
+
+    readPageTitleDate()
 
     refreshHistory();
 
