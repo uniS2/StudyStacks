@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- supabase javascript 라이브러리 -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <title>Supabase 연습</title>
+</head>
+
+<body>
+  <h1>Supabase</h1>
+  <div id="history"></div>
+  <input type="button" value="create" id="create_btn" />
+  <button type="button" id="update_btn">update</button>
+  <button type="button" id="delete_btn">delete</button>
+
+  <script>
+    const supabaseUrl = "https://sesoiiveyuiamriedhhy.supabase.co";
+    const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlc29paXZleXVpYW1yaWVkaGh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ2NzkwNTYsImV4cCI6MjAyMDI1NTA1Nn0.wRN8H67_H-g96QYe7k1u_luCQ_fFzRSQBLd-OMhVoIA";
+    const client = supabase.createClient(supabaseUrl, supabaseKey);
+
+    // table page data 전역 변수
+    let dataList;
+
+    //1-1. READ
+    async function refreshHistory() {
+      let { data: record, error } = await client.from("page").select("*");
+
+      if (error || titleError) throw error;
+
+      // HTML 요소 추가
+      let tag = "";
+      for (let i = 0; i < record.length; i++) {
+        tag += `<h2>${record[i].title}</h2>${record[i].body}`;
+      }
+      document.querySelector("#history").innerHTML = tag;
+
+      return record;
+    }
+
+    //1-2. READ - 필요한 columns만 가져오기
+    async function readPageTitleDate() {
+      let { data: titleData, error: titleError } = await client.from("page").select("id, title");
+
+      if (titleData.length) console.log(titleData);
+      if (titleError) throw error;
+    }
+
+    refreshHistory();
+
+    // table page data 저장
+    async function readDataList() {
+      dataList = await refreshHistory();
+    }
+    readDataList();
+
+    //2. CREATE
+    async function recordHandler() {
+      const [title, body] = [prompt("title?"), prompt("body?", "내용이 없습니다.")];
+
+      if (title) {
+        const { data, error } = await client
+          .from("page")
+          .insert([{ title: title, body: body }]);
+
+        if (error) throw error;
+
+        refreshHistory();
+        readDataList();
+
+      } else alert("제목은 필수로 입력해주세요");
+    }
+
+    //3. UPDATE, filter
+    async function updateHandler() {
+      const { error } = await client
+        .from('page')
+        .update({ title: '수정된 항목입니다.' })
+        .eq("id", dataList[dataList.length - 1].id)
+
+      if (error) throw error;
+
+      refreshHistory();
+      readDataList();
+    }
+
+    //4, DELETE, filter
+    async function deleteHandler() {
+      const { error } = await client
+        .from('page')
+        .delete()
+        .eq("id", dataList[dataList.length - 1].id)
+
+      if (error) throw error;
+
+      refreshHistory();
+      readDataList();
+    }
+
+    document
+      .querySelector("#create_btn")
+      .addEventListener("click", recordHandler);
+
+    document
+      .querySelector("#update_btn")
+      .addEventListener("click", updateHandler);
+
+    document
+      .querySelector("#delete_btn")
+      .addEventListener("click", deleteHandler);
+
+  </script>
+</body>
+
+</html>
