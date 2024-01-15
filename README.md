@@ -15,4 +15,5 @@ Commits what @uniS2 studied today.
 - [Javascript](/javascript)
 - [React](/React)
 - [Project](/Project/)
+- [Emotion](/Emotion/)
 - [Supabase](/Supabase/)
