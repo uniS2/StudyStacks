@@ -44,7 +44,7 @@ Firebase처럼 JavaScript를 사용해서 백엔드 서버, 즉 SQL 없이 서�
 
 - 테이블 스키마 정의: 소프트웨어 복잡성 저하
 
-![Firebase와 Supabase의 차이점](/TIL/Supabase/assets/firebase_supabase.png)
+![Firebase와 Supabase의 차이점](/Supabase/assets/firebase_supabase.png)
 
 - 참고자료: [오픈소스 Firebase, Supabase는 뭐니?](https://psvm.kr/posts/tutorials/supabase/what-is-supabase)
 
@@ -60,7 +60,7 @@ Firebase처럼 JavaScript를 사용해서 백엔드 서버, 즉 SQL 없이 서�
 
 ### 프로젝트 생성
 
-![Supabase](/TIL/Supabase/assets/create-project.png)
+![Supabase](/Supabase/assets/create-project.png)
 
 1. **계정 생성:** GitHub 연동
 2. **프로젝트 생성:** password 사용할 일 거의 없으므로 'Generate a password' 클릭
@@ -72,11 +72,11 @@ Firebase처럼 JavaScript를 사용해서 백엔드 서버, 즉 SQL 없이 서�
 
 1. Table Editor
 
-![기본 Columns](/TIL/Supabase/assets/columns-default.png)
+![기본 Columns](/Supabase/assets/columns-default.png)
 
 2. SQL Editor
 
-![SQL 에디터 동작](/TIL/Supabase/assets/SQL-editor.png)
+![SQL 에디터 동작](/Supabase/assets/SQL-editor.png)
 
 ### 구현
 
