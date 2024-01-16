@@ -3,6 +3,7 @@
 ## 목차
 
 - 🔗 [Getting Start](/Emotion/Getting-Start.md)
+- 🗂️ [Home](/Emotion/i-write-you-initial/src/pages/Home.tsx) | [EmotionStyled](/Emotion/i-write-you-initial/src/pages/EmotionStyled.tsx) | [Composition](/Emotion/i-write-you-initial/src/pages/Composition.tsx) | [Object](/Emotion/i-write-you-initial/src/pages/Object.tsx)
 
 ### 참고
 
