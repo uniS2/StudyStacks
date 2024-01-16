@@ -1,12 +1,16 @@
-# Supabase
+# ![Supabase](https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg) Supabase
 
 240108 [생활코딩 Supabase 입문수업](https://youtu.be/FbLzqoENTsg?si=WlNDtz0bZNK-m2VH)을 기반으로 학습하였습니다.
+
+<br />
 
 ## ✅ 목표
 
 1. Supabase의 기본 사용법을 알 수 있다.
 2. Table을 생성할 수 있다.
 3. Supabase API를 이용한 데이터 `CRUD` 작업과 `select`, `filter` 를 사용할 수 있다.
+
+<br />
 
 ## 🤔 Why? 백엔드 왜 필요한가요?
 
@@ -58,7 +62,7 @@ Firebase처럼 JavaScript를 사용해서 백엔드 서버, 즉 SQL 없이 서�
 
 ## 실습
 
-### 프로젝트 생성
+### 1️⃣ 프로젝트 생성
 
 ![Supabase](/Supabase/assets/create-project.png)
 
@@ -66,7 +70,9 @@ Firebase처럼 JavaScript를 사용해서 백엔드 서버, 즉 SQL 없이 서�
 2. **프로젝트 생성:** password 사용할 일 거의 없으므로 'Generate a password' 클릭
 3. **Region:** 사용 고객과 가까운 지역 선택
 
-### Table 생성
+<br />
+
+### 2️⃣ Table 생성
 
 **Table 생성:** RLS off 시 production 환경에서 절대 사용 금지 <br/> Table Editor, SQL Editor 모두 이용
 
@@ -78,7 +84,9 @@ Firebase처럼 JavaScript를 사용해서 백엔드 서버, 즉 SQL 없이 서�
 
 ![SQL 에디터 동작](/Supabase/assets/SQL-editor.png)
 
-### 구현
+<br />
+
+### 3️⃣ 구현
 
 - [JavaScript Client Library](https://supabase.com/docs/reference/javascript/introduction) 이용
 - JavaScript는 `supabase` 객체를 지원합니다.
