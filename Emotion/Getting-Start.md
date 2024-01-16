@@ -29,6 +29,9 @@
 - [👩‍🎤 Global Styles](#-global-styles)
 - [👩‍🎤 Package Summaries](#-package-summaries)
 
+<br />
+<br />
+
 # 👩‍🎤 Introduction
 
 **👩‍🎤 CSS-in-JS library designed for high performance style composition**
@@ -42,6 +45,8 @@
 
 - 필요한 컴포넌트 페이지의 CSS 스타일 요소만 로딩 가능한 장점
 - 모던 브라우저 뿐만 아니라, IE 11 브라우저 또한 지원
+
+<br />
 
 ## 🤔 그렇다면 Emotion은 어떻게 사용할까?
 
@@ -69,10 +74,15 @@ npm i @emotion/react
 - 테마(Theme) 지원
 - ESLint 플러그인 지원
 
+<br />
+
 ## 사용예시
 
 - [@emotion/react와 styled 컴포넌트 예시](/Emotion/i-write-you-initial/src/pages/Home.tsx) (효윤님, 동호님 감사합니다 🙇🏻‍♀️)
 - vscode 확장프로그램: [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
+
+<br />
+<br />
 
 # 👩‍🎤 Install
 
@@ -99,6 +109,8 @@ npm i @emotion/react
   const Green = () => <div css={green}>그린</div>;
   ```
 
+<br />
+
 ## React + Styled Component
 
 - `@emotion/styled` 패키지를 설치하여 `styled` React 컴포넌트를 활용할 수 있습니다.
@@ -116,6 +128,8 @@ npm i @emotion/react
 
   reder(<Div>바이올렛</Div>);
   ```
+
+<br />
 
 ## Babel plugin
 
@@ -148,6 +162,9 @@ npm install --save-dev @emotion/babel-plugin
 }
 ```
 
+<br />
+<br />
+
 # 👩‍🎤 The css Prop
 
 - components를 스타일링하는 간결하고 유연한 API를 제공합니다.
@@ -163,6 +180,8 @@ npm install --save-dev @emotion/babel-plugin
   // After (jsx Pragma)
   jsx("img", { src: "avatar.png", alt: "" });
   ```
+
+<br />
 
 ## Babel Preset
 
@@ -192,6 +211,8 @@ const Link = (props) => (
 );
 ```
 
+<br />
+
 ## JSX Pragma
 
 `css` prop를 사용하는 소스 파일 상단에 jsx pragma를 설정합니다. <br /> 이 옵션은 css prop 함수를 사용하거나, Babel 구성을 사용할 수 없는 프로젝트에서 사용해야 할 때 활용합니다. (`CRA`, `codesandbox`)
@@ -200,6 +221,8 @@ const Link = (props) => (
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 ```
+
+<br />
 
 ## Object 스타일
 
@@ -218,6 +241,8 @@ render(
   </div>
 );
 ```
+
+<br />
 
 ## String 스타일
 
@@ -240,6 +265,8 @@ render(
   </div>
 );
 ```
+
+<br />
 
 ## 스타일 우선순위
 
@@ -270,11 +297,16 @@ render(
 );
 ```
 
+<br />
+<br />
+
 # 👩‍🎤 Object Styles
 
 - 😃 객체를 통한 스타일 작성 또한 Emotion이 제공하는 강력한 패턴입니다.
 - 일반적인 CSS 작성법인 kebab-case 대신 cameCase를 사용해 작성합니다.
 - `css` prop과 함께 사용할 때 유용합니다.
+
+<br />
 
 ## [Object Styles example](https://emotion.sh/docs/object-styles#examples)
 
@@ -332,6 +364,9 @@ render(
    );
    ```
 
+<br />
+<br />
+
 # 👩‍🎤 Nested Selectors
 
 `&` 를 사용한 상위 요소가 컴포넌트를 중첩한 상황 스타일링
@@ -357,6 +392,9 @@ render(
   </div>
 );
 ```
+
+<br />
+<br />
 
 # 👩‍🎤 Media Queries
 
@@ -404,6 +442,8 @@ render(
 );
 ```
 
+<br />
+
 ## facepaint
 
 - `facepaint` 패키지를 활용하면 각 미디어 쿼리에 배열로 포함되어야 하는 각 CSS 속성을 정의할 수 있어 편리합니다.
@@ -433,11 +473,17 @@ render(
 );
 ```
 
+<br />
+<br />
+
 # 👩‍🎤 Global Styles
 
 - 스타일을 전역적으로 삽입한다는 차이점
 - 단, 스타일이 변경되거나, Global 컴포넌트가 마운트 해제되면 전역 스타일 또한 함께 제거됩니다.
 - [GlobalStyle.tsx 예제](/Emotion/i-write-you-initial/src/style/GlobalStyle.tsx) 🙇🏻‍♀️🙇🏻‍♀️
+
+<br />
+<br />
 
 # 👩‍🎤 Package Summaries
 
